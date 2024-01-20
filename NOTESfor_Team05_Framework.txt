@@ -1,0 +1,82 @@
+
+
+    FRAMEWORK hk.
+   --> NOTE:  Frameworkte dersten kalan ornek class'lar en son silinecek! (ornek; Pages-Ornek_GurkayHoca_DeanPage)
+
+    SATIR ARALIKLARI hk.:
+    1) PAGES package'i altindaki ortak class'larda lutfen satir araliklarina uyalim.
+        Code Writing Calismalariniz bittikten sonra;
+
+              -->  kendi satirinizi, sizden onceki ve sonraki kisinin satirlarini kontrol ediniz,
+              -->  kayma var ise duzeltiniz,
+              -->  EN SON Push islemini yapiniz.
+
+         pages class lari kişilere ayrılan satır numaraları
+                #Duygu Jones(100)
+                #Salih Kaygusuz (200)
+                #Yakup Aydin(300)
+                #Kubra Cemrek(400)
+                #Mehmet Ergan(500)
+                #Halil Uslu(600)
+                #Mustafa Aydin(700)
+                #Kubra Unver(800)
+                #Isra Muncester(900)
+
+        configuration.properties kişilere ayrılan satır numaraları
+                 #Duygu Jones(45)
+                 #Salih Kaygusuz (65)
+                 #Yakup Aydin(85)
+                 #Kubra Cemrek(105)
+                 #Mehmet Ergan(152)
+                 #Halil Uslu(145)
+                 #Mustafa Aydin(165)
+                 #Kubra Unver(185)
+                 #Isra Muncester(205)
+
+
+    TUM ORTAK CLASSLAR ICIN DE SATIR ARALIGI uygulamasi GECERLIDIR
+
+    2) Reusable Methods
+        RM classinda ihtiyac duygdugunuzda yeni methodlar ekleyebilirsiniz.
+        Sayfanin en altinda kendinize 50 satirlik bir alan aliciniz ve baslangic-bitis satirlarini belirtiniz
+        Herkes de bu satirlarin sonuna kendi araligini belirterek sayfa paylasiminda devamlilik olusturabiliriz.
+
+    3) JDBC_Utils
+        DataBase ile ilgili methodlara class ismi ile buradan ulaşabilirsiniz. (JDBC_Utils.connecToDatabase(); gibi)
+
+
+    GITHUB hk.
+    4) Github Manager tarafindan Github'ta projeye ait token alinacak (1kez yapilir)
+
+    5) GitHub islemleri sirasinda, hazirlanmis olan Github Dokumani takip edilir
+        --> Rutin adimlar
+        --> Projeyi Clone'la ve Kendi Branch ini  olustur
+
+                1.adim: kendi branch gec
+                           code yazim-calismalar
+
+                 2.adim : commit
+                          xml,txt gibi sayfalari sec--> rollback yap. Commit yapma
+                          calistiginiz class sec --> Aciklama notu ekle --> Commit tikla  --> commit basarisiz mesajini ignore et
+
+                3.adim: Master brancha gec Pull yap;
+                         Menu - Git - Pull  --> tikla
+
+                4.adim: kendi branch gec Merge yap;
+                        Menu - Git - Merge --> origin/master --> sec--> Merge tikla
+                         !!!  Conflict VAR ise--> gelen ekranda satir uzerine cift tikla
+                                "remote" sag kisimdaki git'ten gelen tum codelari <<< isatetine tikla orta alana "result" kismina al
+                                "Your local"sol kisim size ait olan local codlari >>> isaretine tikla orta alana "result" kismina al - gereksiz code ise X ile sil
+                                -->  APPLY -- tikla
+
+                         !!!  Conflict YOK ise--> Push yapin ==> 5.adim
+
+                5.Adim: kendi branch devam--> Push et
+                        Menu - Git - Push --> "Push Anyway" tikla
+
+
+
+
+
+
+
