@@ -1,12 +1,12 @@
-
+@UI_US04
 Feature: US_04 Admin add Dean to the website
 
   Background: Admin goes application page
-    Given dj admin goes the page url
-    When  dj admin clicks to login button
-    And   dj admin login with user credentials
+    Given admin goes the page url dj
+    When  admin clicks to login button dj
+    And   admin login with user credentials dj
 
-  @UI_US04_TC01
+
   Scenario: US04_TC01 Admin adds Dean to the website
 
     Then dj Admin verifies if navigated to the admin management page
@@ -22,12 +22,12 @@ Feature: US_04 Admin add Dean to the website
     And  dj Admin fills the username box
     And  dj Admin fills the password box
     And  dj Admin clicks on the submit button
-    Then dj admin verifies if the Dean Saved popup is displayed
+    Then dj Admin verifies if the Dean Saved popup is displayed
     And  dj close the browser
 
 
 
-  @UI_US04_TC02
+
   Scenario Outline: US04_TC02 Admin add Dean to the website(Negative Scenario mistake Ssn)
 
     And  dj Admin verifies if navigated to the admin management page
@@ -44,13 +44,13 @@ Feature: US_04 Admin add Dean to the website
     And  dj Admin fills the password box
     And  dj Admin clicks on the submit button
     And  dj Admin verifies if the Ssn Ssn required text is displayed to the admin management page
-    And  dj Admin the browser
+    And  dj close the browser
     Examples:
       | Ssn |
       | 34562794787  |
 
 
-  @UI_US04_TC03
+
   Scenario Outline: US04_TC03 Admin add Dean to the website(Negative Scenario empty name)
 
     And  dj Admin verifies if navigated to the admin management page
@@ -74,7 +74,7 @@ Feature: US_04 Admin add Dean to the website
 
 
 
-  @UI_US04_TC03
+
   Scenario Outline: US04_TC04 Admin add Dean to the website(Negative Scenario don't use number for password and less than 8 character)
 
     And  dj Admin verifies if navigated to the admin management page
@@ -90,7 +90,7 @@ Feature: US_04 Admin add Dean to the website
     And  dj Admin fills the username box
     And  dj Admin fills the password box invalid "<password>"
     And  dj Admin clicks on the submit button
-    And  dj Admin verifies if the One number text is displayed to the admin management page
+    And  dj Admin verifies if the valid phone number required text is displayed to the admin management page
     And  dj close the browser
     Examples:
       | password    |

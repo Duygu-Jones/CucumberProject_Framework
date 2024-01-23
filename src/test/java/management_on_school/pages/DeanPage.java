@@ -107,20 +107,27 @@ public class DeanPage {
     @FindBy(xpath = "(//button[@class='text-dark btn btn-outline-info'])")
     public List<WebElement> deanEditButtonListDj;
 
-    //--> Dean Edit window
-    @FindBy(id="name")   public WebElement editDeanNameDj;
-    @FindBy(id="surname")   public WebElement editDeanSurnameDj;
-    @FindBy(id="birthPlace")   public WebElement editDeanBirthplaceDj;
-    @FindBy(xpath="(//input[@type='radio'])[1]")   public WebElement editDeanFemaleCheckBoxDj;
-    @FindBy(xpath="(//input[@type='radio'])[2]")   public WebElement editDeanMaleCheckBoxDj;
-    @FindBy(id="birthDay")   public WebElement editDeanBirthdayDj;
-    @FindBy(id="phoneNumber")   public WebElement editDeanPhoneDj;
-    @FindBy(id="ssn")   public WebElement editDeanSsnDj;
-    @FindBy(id="username")   public WebElement editDeanUsernameDj;
-    @FindBy(id="password")   public WebElement editDeanPasswordDj;
-    @FindBy(xpath="(//button[@type='button'])[5]")   public WebElement editDeanSubmitButtonDj;
+    //--> Dean Add/Edit locators
+    @FindBy(id="name")   public WebElement deanNameBoxDj;
+    @FindBy(id="surname")   public WebElement deanSurnameBoxDj;
+    @FindBy(id="birthPlace")   public WebElement deanBirthPlaceBoxDj;
+    @FindBy(xpath="(//input[@value='FEMALE'])[2]")   public WebElement deanFemaleCheckBoxDj;
+    @FindBy(xpath="(//input[@value='MALE'])[2]")   public WebElement deanMaleCheckBoxDj;
+    @FindBy(id="birthDay")   public WebElement deanBirthDateBoxDj;
+    @FindBy(id="phoneNumber")   public WebElement deanPhoneBoxDj;
+    @FindBy(id="ssn")   public WebElement deanSsnBoxDj;
+    @FindBy(id="username")   public WebElement deanUsernameBoxDj;
+    @FindBy(id="password")   public WebElement deanPasswordBoxDj;
+    @FindBy(xpath="(//button[.='Submit'])[2]")   public WebElement editDeanSubmitButtonDj;
     @FindBy(css="#root") public WebElement deanUpdatedSucDj;
+    @FindBy(xpath = "//button[.='Submit']") public WebElement addDeanSubmitButtonDj;
+    @FindBy(xpath="//div[@class='Toastify__toast-body']/div[.='Dean Saved']")
+    public WebElement deanSavedTextDj;  // "Dean Saved" successfully alert
 
+    @FindBy(xpath="(//div[text()='Required'])[1]")
+    public WebElement nameRequiredDeanDj;  //name required text locate
+    @FindBy(xpath="(//div[@class='Toastify__toast-body']/div[.='Please enter valid phone number'])[2]")
+    public WebElement validPhoneRequiredDj;  // password created use one number required text locate
 
 
 
