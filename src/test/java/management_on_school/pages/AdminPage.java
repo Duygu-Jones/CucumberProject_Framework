@@ -99,6 +99,9 @@ public class AdminPage {
 
     // Duygu Jones (100)
 
+    @FindBy(css="h3[bg='primary']") public WebElement adminPageTitleDj;
+    @FindBy(css="button[aria-controls='offcanvasNavbar-expand-false']") public WebElement adminMenuButtonDj;
+    @FindBy(xpath = "//a[text()='Dean Management']")  public WebElement deanManagementButtonDj;
 
 
 

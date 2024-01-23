@@ -5,18 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
-
-
-
-
-
-
-
-
-
-
-
+import java.util.List;
 
 
 public class DeanPage {
@@ -99,8 +88,38 @@ public class DeanPage {
 
     // Duygu Jones (100)
 
+    //--> Dean Management Page
+    @FindBy(xpath = "//h5[.='Dean List']")
+    public WebElement deanListTitleDj;
+    @FindBy(xpath = "(//*[@class='page-link'])[5]")
+    public WebElement deanLastPageIconDj;
+    @FindBy(xpath = "//table[@class='table table-striped table-bordered table-hover']//tbody//tr//td[1]")
+    public List<WebElement> deanNamesListDj;
+    @FindBy(xpath = "//table[@class='table table-striped table-bordered table-hover']//tbody//tr//td[2]")
+    public List<WebElement> deanGenderListDj;
 
+    @FindBy(xpath = "//table[@class='table table-striped table-bordered table-hover']//tbody//tr//td[3]")
+    public List<WebElement> deanPhoneListDj;
+    @FindBy(xpath = "//table[@class='table table-striped table-bordered table-hover']//tbody//tr//td[4]")
+    public List<WebElement> deanSsnNumsListDj;
+    @FindBy(xpath = "//table[@class='table table-striped table-bordered table-hover']//tbody//tr//td[5]")
+    public List<WebElement> deanUserNamesListDj;
+    @FindBy(xpath = "(//button[@class='text-dark btn btn-outline-info'])")
+    public List<WebElement> deanEditButtonListDj;
 
+    //--> Dean Edit window
+    @FindBy(id="name")   public WebElement editDeanNameDj;
+    @FindBy(id="surname")   public WebElement editDeanSurnameDj;
+    @FindBy(id="birthPlace")   public WebElement editDeanBirthplaceDj;
+    @FindBy(xpath="(//input[@type='radio'])[1]")   public WebElement editDeanFemaleCheckBoxDj;
+    @FindBy(xpath="(//input[@type='radio'])[2]")   public WebElement editDeanMaleCheckBoxDj;
+    @FindBy(id="birthDay")   public WebElement editDeanBirthdayDj;
+    @FindBy(id="phoneNumber")   public WebElement editDeanPhoneDj;
+    @FindBy(id="ssn")   public WebElement editDeanSsnDj;
+    @FindBy(id="username")   public WebElement editDeanUsernameDj;
+    @FindBy(id="password")   public WebElement editDeanPasswordDj;
+    @FindBy(xpath="(//button[@type='button'])[5]")   public WebElement editDeanSubmitButtonDj;
+    @FindBy(css="#root") public WebElement deanUpdatedSucDj;
 
 
 
