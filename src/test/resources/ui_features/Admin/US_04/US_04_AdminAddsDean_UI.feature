@@ -6,7 +6,6 @@ Feature: US_04 Admin add Dean to the website
     When  admin clicks to login button dj
     And   admin login with user credentials dj
 
-
   Scenario: US04_TC01 Admin adds Dean to the website
 
     Then dj Admin verifies if navigated to the admin management page
@@ -15,7 +14,7 @@ Feature: US_04 Admin add Dean to the website
     And  dj Admin fills the name box
     And  dj Admin fills the surname box
     And  dj Admin fills the birthplace box
-    And  dj Admin clicks on the gender female button
+    And  dj Admin clicks on the gender "FEMALE" button
     And  dj Admin fills the date of birth box
     And  dj Admin fills the phone box
     And  dj Admin fills the ssn box
@@ -26,8 +25,6 @@ Feature: US_04 Admin add Dean to the website
     And  dj close the browser
 
 
-
-
   Scenario Outline: US04_TC02 Admin add Dean to the website(Negative Scenario mistake Ssn)
 
     And  dj Admin verifies if navigated to the admin management page
@@ -36,7 +33,7 @@ Feature: US_04 Admin add Dean to the website
     And  dj Admin fills the name box
     And  dj Admin fills the surname box
     And  dj Admin fills the birthplace box
-    And  dj Admin clicks on the gender female button
+    And  dj Admin clicks on the gender "FEMALE" button
     And  dj Admin fills the date of birth box
     And  dj Admin fills the phone box
     And  dj Admin fills the invalids "<Ssn>" ssn box
@@ -50,7 +47,6 @@ Feature: US_04 Admin add Dean to the website
       | 34562794787  |
 
 
-
   Scenario Outline: US04_TC03 Admin add Dean to the website(Negative Scenario empty name)
 
     And  dj Admin verifies if navigated to the admin management page
@@ -59,7 +55,7 @@ Feature: US_04 Admin add Dean to the website
     And  dj Admin fills the empty "<name>" box
     And  dj Admin fills the surname box
     And  dj Admin fills the birthplace box
-    And  dj Admin clicks on the gender female button
+    And  dj Admin clicks on the gender "FEMALE" button
     And  dj Admin fills the date of birth box
     And  dj Admin fills the phone box
     And  dj Admin fills the ssn box
@@ -73,8 +69,6 @@ Feature: US_04 Admin add Dean to the website
       |      |
 
 
-
-
   Scenario Outline: US04_TC04 Admin add Dean to the website(Negative Scenario don't use number for password and less than 8 character)
 
     And  dj Admin verifies if navigated to the admin management page
@@ -83,7 +77,7 @@ Feature: US_04 Admin add Dean to the website
     And  dj Admin fills the name box
     And  dj Admin fills the surname box
     And  dj Admin fills the birthplace box
-    And  dj Admin clicks on the gender female button
+    And  dj Admin clicks on the gender "FEMALE" button
     And  dj Admin fills the date of birth box
     And  dj Admin fills the phone box
     And  dj Admin fills the ssn box

@@ -3,24 +3,24 @@ package management_on_school.pojos.dean_management;
 import java.io.Serializable;
 
 public class DeanResponsePojo implements Serializable {
-	private ObjectPojo object;
+	private DeanObjectPojo object;
 	private String message;
 	private String httpStatus;
 
 	public DeanResponsePojo() {
 	}
 
-	public DeanResponsePojo(ObjectPojo object, String message, String httpStatus) {
+	public DeanResponsePojo(DeanObjectPojo object, String message, String httpStatus) {
 		this.object = object;
 		this.message = message;
 		this.httpStatus = httpStatus;
 	}
 
-	public void setObject(ObjectPojo object){
+	public void setObject(DeanObjectPojo object){
 		this.object = object;
 	}
 
-	public ObjectPojo getObject(){
+	public DeanObjectPojo getObject(){
 		return object;
 	}
 

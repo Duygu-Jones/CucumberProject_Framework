@@ -100,23 +100,11 @@ public class HomePage {
 
 
     // Duygu Jones (100)
-
-    @FindBy(xpath="//a[@href='/login']")  //anasayfadaki login butonu
-    public WebElement loginMainDj;
-
-    //@FindBy(xpath="//a[@class='header_link ms-2']")  //anasayfadaki login butonu
-
-    @FindBy(xpath = "//*[@id='username']")
-    public WebElement usernameDj;
-
-    @FindBy(xpath="//*[@id='password']")
-    public WebElement passwordDj;
-
-    @FindBy(xpath = "(//*[@type='button'])[3]")
-    public WebElement loginButtonDj;
-
-    @FindBy(xpath = "(//*[@type='button'])[1]")
-    public WebElement menuButtonDj;
+    @FindBy(xpath="//a[@href='/login']")      public WebElement loginMainDj;
+    @FindBy(xpath = "//*[@id='username']")    public WebElement usernameDj;
+    @FindBy(xpath="//*[@id='password']")    public WebElement passwordDj;
+    @FindBy(xpath = "(//*[@type='button'])[3]")    public WebElement loginButtonDj;
+    @FindBy(xpath = "(//*[@type='button'])[1]")    public WebElement menuButtonDj;
 
 
 

@@ -2,7 +2,7 @@ package management_on_school.pojos.dean_management;
 
 import java.io.Serializable;
 
-public class ObjectPojo implements Serializable {
+public class DeanObjectPojo implements Serializable {
 	private int userId;
 	private String username;
 	private String name;
@@ -13,11 +13,11 @@ public class ObjectPojo implements Serializable {
 	private String phoneNumber;
 	private String gender;
 
-	public ObjectPojo() {
+	public DeanObjectPojo() {
 
 	}
 
-	public ObjectPojo(int userId, String username, String name, String surname, String birthDay, String ssn, String birthPlace, String phoneNumber, String gender) {
+	public DeanObjectPojo(int userId, String username, String name, String surname, String birthDay, String ssn, String birthPlace, String phoneNumber, String gender) {
 		this.userId = userId;
 		this.username = username;
 		this.name = name;

@@ -104,13 +104,10 @@ public class GuestUserListPage {
     @FindBy(xpath = "(//*[.='Team05Guest Perfect'])[2]")  public WebElement team05GuestNameDj;
     @FindBy(xpath = "//table[@class='table table-striped table-bordered table-hover']//tbody//tr//td[1]")
     public List<WebElement> guestNamesListDj;
-
     @FindBy(xpath = "//table[@class='table table-striped table-bordered table-hover']//tbody//tr//td[2]")
     public List<WebElement> guestPhoneNumsListDj;
-
     @FindBy(xpath = "//table[@class='table table-striped table-bordered table-hover']//tbody//tr//td[3]")
     public List<WebElement> guestSsnNumsListDj;
-
     @FindBy(xpath = "//table[@class='table table-striped table-bordered table-hover']//tbody//tr//td[4]")
     public List<WebElement> guestUserNamesListDj;
     @FindBy(xpath = "//button[@class='btn btn-danger']")
