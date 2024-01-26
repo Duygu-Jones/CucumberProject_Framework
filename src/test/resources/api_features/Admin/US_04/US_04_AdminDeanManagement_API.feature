@@ -6,7 +6,6 @@
      Given Login as "Admin"
      Then dj Admin creates POST Request with the URL and dean-save path parameters
      Then dj Admin creates POST Request Body
-     And dj Admin creates Expected Response Body
      And dj Admin sends POST request and saves the response
      And dj Admin verifies Status-Code is 200
      And dj Admin verifies Content-Type is "application/json"
@@ -15,10 +14,11 @@
 
   Scenario: US04_TC02 Admin sends GET request to get Dean information from the website api
     Given Login as "Admin"
+    Then dj Admin saved the userID after created Dean
     Then dj Admin creates GET Request with the URL and dean-search path parameters
-    Then dj Admin creates Expected Response Body
+    Then dj Admin creates Expected Response Body for Get
     And dj Admin sends GET Request and saves the response
-    And dj Admin verifies Status-Code 200
+    And dj Admin verifies Status-Code is 200
     And dj Admin verifies Content-Type is "application/json"
     And dj Admin verifies GET Response Body as expected
 
@@ -26,7 +26,8 @@
    Scenario: US04_TC03 Admin send DELETE Request to delete Dean from the website api
      Given Login as "Admin"
      Then dj Admin creates DELETE Request with the URL and dean-delete-userID path parameters
-     Then dj Admin verifies Status-Code 200
+     And dj Admin sends DELETE Request and saves the response
+     Then dj Admin verifies Status-Code is 200 for delete request
      And dj Admin verifies Content-Type is "application/json"
      And dj Admin verifies DELETE Response Body as expected
 

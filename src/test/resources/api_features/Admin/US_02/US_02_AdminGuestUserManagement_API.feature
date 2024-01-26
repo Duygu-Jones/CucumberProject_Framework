@@ -7,8 +7,8 @@ Feature: US02 GuestUser Management by the Admin
 #    Given Login as "Admin"
 #    Then dj Admin creates POST Request with the URL and "guestUser/register" path parameters for guestUser
 #    Then dj Admin creates POST Request Body for guestUser
-#    And dj Admin creates Expected Response Body for guestUser
 #    And dj Admin sends POST request and saves the response for guestUser
+#    And dj Admin creates Expected Response Body for guestUser
 #    And dj Admin verifies Status-Code is 200 for guestUser
 #    And dj Admin verifies Content-Type is "application/json" for guestUser
 #    And dj Admin verifies POST Response Body as expected for guestUser
@@ -17,8 +17,8 @@ Feature: US02 GuestUser Management by the Admin
   Scenario: US04_TC02 Admin sends GET request to get AGuestUser information from the website api
     Given Login as "Admin"
     Then dj Admin creates GET Request with the URL and guestUser-userID path parameters for guestUser
-    Then dj Admin creates Expected Response Body for guestUser
     And dj Admin sends GET Request and saves the response for guestUser
+    Then dj Admin creates Expected Response Body for guestUser
     And dj Admin verifies Status-Code 200 for guestUser
     And dj Admin verifies Content-Type is "application/json" for guestUser
     And dj Admin verifies GET Response Body as expected for guestUser
