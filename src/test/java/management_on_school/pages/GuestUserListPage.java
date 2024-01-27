@@ -113,6 +113,19 @@ public class GuestUserListPage {
     @FindBy(xpath = "//button[@class='btn btn-danger']")
     public List<WebElement> guestDeleteButtonListDj;
 
+    //--------Register Guest User for API------------------------
+    @FindBy(id="name")   public WebElement guestNameBoxDj;
+    @FindBy(id="surname")   public WebElement guestSurnameBoxDj;
+    @FindBy(id="birthPlace")   public WebElement guestBirthPlaceBoxDj;
+    @FindBy(xpath="//input[@value='FEMALE']")   public WebElement guestFemaleCheckBoxDj;
+    @FindBy(xpath="//input[@value='MALE']")   public WebElement guestMaleCheckBoxDj;
+    @FindBy(id="birthDay")   public WebElement guestBirthDateBoxDj;
+    @FindBy(id="phoneNumber")   public WebElement guestPhoneBoxDj;
+    @FindBy(id="ssn")   public WebElement guestSsnBoxDj;
+    @FindBy(id="username")   public WebElement guestUsernameBoxDj;
+    @FindBy(id="password")   public WebElement guestPasswordBoxDj;
+    @FindBy(xpath="//div[@role='alert']/div[.='Guest User registered.']")  public WebElement guestRegisterVerifyDj;
+
 
 
 

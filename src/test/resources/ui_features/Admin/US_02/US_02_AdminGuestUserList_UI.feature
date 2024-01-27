@@ -3,7 +3,7 @@
 Feature: US02 Guest_User_List
 
   Background: User goes application page
-    Given dj admin goes the page url
+    Given dj user goes to the page Url
     When  dj admin clicks to login button
     And   dj admin login with user credentials
 

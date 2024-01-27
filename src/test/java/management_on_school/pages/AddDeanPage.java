@@ -128,12 +128,12 @@ public class AddDeanPage {
     @FindBy(id="username")   public WebElement deanUsernameBoxDj;
     @FindBy(id="password")   public WebElement deanPasswordBoxDj;
     @FindBy(xpath="(//button[.='Submit'])[2]")   public WebElement editDeanSubmitButtonDj;
-    @FindBy(css="#root") public WebElement deanUpdatedSucDj;
+    @FindBy(css="#root") public WebElement deanEditedVerifyDj;
     @FindBy(css = ".btn-primary") public WebElement addDeanSubmitButtonDj;
-    @FindBy(xpath="//div[@class='Toastify__toast-body']/div[.='Dean Saved']")  public WebElement deanSavedPopUpDj;
-    @FindBy(xpath="(//div[@class='invalid-feedback'])[1]")  public WebElement nameRequiredPopupDj;  //name required text locate
-    @FindBy(xpath="//div[@class='Toastify__toast-body']/div[.='Please enter valid SSN number']")  public WebElement ssnRequiredPopupDj;
-     @FindBy(xpath="(//div[@class='invalid-feedback'])[8]")  public WebElement unValidPasswordDj;
+    @FindBy(xpath="//div[@class='Toastify__toast-body']/div[.='Dean Saved']")  public WebElement deanSavedVerifyDj;
+    @FindBy(xpath="(//div[@class='invalid-feedback'])[1]")  public WebElement nameRequiredVerifyDj;  //name required text locate
+    @FindBy(xpath="//div[@class='Toastify__toast-body']/div[.='Please enter valid SSN number']")  public WebElement ssnRequiredVerifyDj;
+     @FindBy(xpath="(//div[@class='invalid-feedback'])[8]")  public WebElement unValidPasswordVrifyDj;
 
 
 

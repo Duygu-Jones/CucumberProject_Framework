@@ -1,24 +1,25 @@
 @API_US02
 
-Feature: US02 GuestUser Management by the Admin
+Feature: US02 GuestUser Management
 
-  #-----> Admin GuestUser olusturamiyor sadece Get ve Delete yapabilir
-#  Scenario: US02_TC01 Admin sends POST Request to Add GuestUser to the website api
-#    Given Login as "Admin"
-#    Then dj Admin creates POST Request with the URL and "guestUser/register" path parameters for guestUser
-#    Then dj Admin creates POST Request Body for guestUser
-#    And dj Admin sends POST request and saves the response for guestUser
-#    And dj Admin creates Expected Response Body for guestUser
-#    And dj Admin verifies Status-Code is 200 for guestUser
-#    And dj Admin verifies Content-Type is "application/json" for guestUser
-#    And dj Admin verifies POST Response Body as expected for guestUser
+  #-----> Admin, sadece Get ve Delete GuestUser yapabilir
+  @UI_US02
+  Scenario: US02_TC01 Register as a GuestUser on the website api
+    Given dj user goes to the page Url
+    Then dj Clicks on the register button
+    And  dj User clicks on the gender "FEMALE" button
+    And  dj Fills the required information and clicks on Register
+    #And dj user verifies,Guest User registered successfully
+    And dj close the browser
+
 
 
   Scenario: US04_TC02 Admin sends GET request to get AGuestUser information from the website api
     Given Login as "Admin"
+    Then dj Admin saved the userID after GuestUser registered
     Then dj Admin creates GET Request with the URL and guestUser-userID path parameters for guestUser
-    And dj Admin sends GET Request and saves the response for guestUser
     Then dj Admin creates Expected Response Body for guestUser
+    And dj Admin sends GET Request and saves the response for guestUser
     And dj Admin verifies Status-Code 200 for guestUser
     And dj Admin verifies Content-Type is "application/json" for guestUser
     And dj Admin verifies GET Response Body as expected for guestUser
@@ -27,6 +28,7 @@ Feature: US02 GuestUser Management by the Admin
   Scenario: US04_TC03 Admin send DELETE Request to delete GuestUser from the website api
     Given Login as "Admin"
     Then dj Admin creates DELETE Request with the URL and guestUser-delete-userID path parameters for guestUser
+    And dj Admin sends DELETE Request and saves the response for guestUser
     Then dj Admin verifies Status-Code 200 for guestUser
     And dj Admin verifies Content-Type is "application/json" for guestUser
     And dj Admin verifies DELETE Response Body as expected for guestUser
@@ -38,38 +40,35 @@ Feature: US02 GuestUser Management by the Admin
         #   Forbidden   : 403
         #   Not Found   : 404
 
-        #  --------> GuestUser Request Body
+        #  --------> GuestUser Request Body ???
         #   {
-        #     "birthDay"    : "01-01-1990",
+        #     "birthDay"    : "1990-01-01",
         #     "birthPlace"  : "Wales",
-        #     "gender"      : "MALE",
-        #     "name"        : "Jhoseph",
+        #     "gender"      : "FEMALE",
+        #     "name"        : "GuestDuyguJ",
         #     "password"    : "Project14",
-        #     "phoneNumber" : "504-235-6532",
-        #     "ssn"         : "120-42-6432",
-        #     "surname"     : "Parkman",
-        #     "username"    : "GuestUserTeam05"
+        #     "phoneNumber" : "444-932-1901",
+        #     "ssn"         : "823-10-7392",
+        #     "surname"     : "Joneses",
+        #     "username"    : "GuestUserDuyguJ"
         #   }
 
-        #  -------> GuestUser Response Body
+        #  -------> GuestUser Get All Response Body for one 1
         #  {
-        #    "httpStatus"   : "100 CONTINUE",
-        #    "message"      : "string",
-        #    "object"       : {
-        #      "birthDay"   : "string",
-        #      "birthPlace" : "string",
-        #      "gender"     : "MALE",
-        #      "name"       : "string",
-        #      "phoneNumber": "string",
-        #      "ssn"        : "string",
-        #      "surname"    : "string",
-        #      "userId"     : 0,
-        #      "username"   : "string"
-        #    }
-        #  }
+        #            "id": ...,
+        #            "username": "GuestUserDuyguJ",
+        #            "ssn": "823-10-7392",
+        #            "name": "GuestDuyguJ",
+        #            "surname": "Joneses",
+        #            "birthDay": "1990-01-01",
+        #            "birthPlace": "Wales",
+        #            "phoneNumber": "444-932-1901",
+        #            "gender": "FEMALE"
+        #  },
 
-        #  --------> Delete response body
+
+        #  --------> Delete GuestUser Response body
         # {
-        #     "message"     : "Dean Deleted",
+        #     "message"     : " Guest User deleted Successful",
         #     "httpStatus"  : "OK"
         # }
