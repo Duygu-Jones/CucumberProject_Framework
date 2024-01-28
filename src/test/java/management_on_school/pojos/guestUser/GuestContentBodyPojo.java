@@ -1,8 +1,11 @@
 package management_on_school.pojos.guestUser;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.io.Serializable;
 
-public class GuestObjectPojo implements Serializable {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class GuestContentBodyPojo implements Serializable {
 	private int userId;
 	private String username;
 	private String name;
@@ -13,10 +16,10 @@ public class GuestObjectPojo implements Serializable {
 	private String phoneNumber;
 	private String gender;
 
-	public GuestObjectPojo() {
+	public GuestContentBodyPojo() {
 	}
 
-	public GuestObjectPojo(int userId, String username, String name, String surname, String birthDay, String ssn, String birthPlace, String phoneNumber, String gender) {
+	public GuestContentBodyPojo(int userId, String username, String name, String surname, String birthDay, String ssn, String birthPlace, String phoneNumber, String gender) {
 		this.userId = userId;
 		this.username = username;
 		this.name = name;
