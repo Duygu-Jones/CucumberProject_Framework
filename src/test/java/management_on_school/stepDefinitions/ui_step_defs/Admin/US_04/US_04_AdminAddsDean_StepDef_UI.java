@@ -182,6 +182,7 @@ public class US_04_AdminAddsDean_StepDef_UI {
         Assert.assertTrue(addDeanPage.nameRequiredVerifyDj.isDisplayed());
     }
 
+    //-----------Scenario 4: wrong password-----------
     @And("dj Admin fills the password box invalid {string}")
     public void djAdminFillsThePasswordBoxInvalid(String pwd) {
         addDeanPage.deanPasswordBoxDj.sendKeys(pwd);
@@ -190,6 +191,23 @@ public class US_04_AdminAddsDean_StepDef_UI {
     @And("dj Admin verifies if the valid phone number required text is displayed to the admin management page")
     public void djAdminVerifiesIfTheOneNumberTextIsDisplayedToTheAdminManagementPage() {
         ReusableMethods.waitForSecond(2);
-        Assert.assertTrue(addDeanPage.unValidPasswordVrifyDj.getText().contains("One number"));
+        Assert.assertTrue(addDeanPage.unValidPasswordVerifyDj.getText().contains("One number"));
+    }
+
+    //----------E2E: Create the Dean with the Information-----------
+    @And("dj Fills the required information and clicks on Submit Button")
+    public void djFillsTheRequiredInformationAndClicksOnSubmitButton() {
+        addDeanPage.deanNameBoxDj.sendKeys(
+                    "Duygu",Keys.TAB,                   //Name
+                                "Jones", Keys.TAB,                  //Surname
+                                "Izmir",Keys.TAB,                   //BirthPlace
+                                Keys.TAB,                           //Gender skipped
+                                "05051975",Keys.TAB,                //BirtDate
+                                "555-275-8196",Keys.TAB,            //Phone
+                                "568-72-9305",Keys.TAB,             //SSN no
+                                "jnsduygu",Keys.TAB,                //Username
+                                "Project14",Keys.TAB,               //password
+                                Keys.ENTER);                        //clicks on Submit button
+        ReusableMethods.waitForSecond(2);
     }
 }

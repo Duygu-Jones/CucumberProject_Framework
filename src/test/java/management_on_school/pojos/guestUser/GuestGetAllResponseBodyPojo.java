@@ -6,21 +6,21 @@ import java.util.List;
 import java.io.Serializable;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class GuestResponseBodyPojo implements Serializable {
-	private List<GuestContentBodyPojo> content;
+public class GuestGetAllResponseBodyPojo implements Serializable {
+	private List<GuestGetAllContentListPojo> content;
 
-	public GuestResponseBodyPojo() {
+	public GuestGetAllResponseBodyPojo() {
 	}
 
-	public GuestResponseBodyPojo(List<GuestContentBodyPojo> content) {
+	public GuestGetAllResponseBodyPojo(List<GuestGetAllContentListPojo> content) {
 		this.content = content;
 	}
 
-	public void setContent(List<GuestContentBodyPojo> content){
+	public void setContent(List<GuestGetAllContentListPojo> content){
 		this.content = content;
 	}
 
-	public List<GuestContentBodyPojo> getContent(){
+	public List<GuestGetAllContentListPojo> getContent(){
 		return content;
 	}
 

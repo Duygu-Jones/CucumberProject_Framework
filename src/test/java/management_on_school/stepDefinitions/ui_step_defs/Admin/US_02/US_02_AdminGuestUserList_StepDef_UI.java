@@ -114,12 +114,14 @@ public class US_02_AdminGuestUserList_StepDef_UI {
     }
 
 
-    //----------GuestUser Register----------------------
+    //----------GuestUser Register ----------------------
 
     @Then("dj Clicks on the register button")
     public void dj_clicks_on_the_register_button() {
         ReusableMethods.jsClick(homePage.registerButtonDj);
     }
+
+
     @Then("dj Fills the required information and clicks on Register")
     public void dj_fills_the_required_information_and_clicks_on_register() {
         guestUserPage.guestNameBoxDj.sendKeys(
@@ -130,7 +132,7 @@ public class US_02_AdminGuestUserList_StepDef_UI {
                                                    Keys.TAB,    //Gender skipped
                                     "01011990",Keys.TAB,        //BirtDate
                                     "823-10-7392",Keys.TAB,     //SSN no
-                                    "00GuestDuyguJ",Keys.TAB, //Username
+                                    "00GuestDuyguJ",Keys.TAB,  //Username
                                     "Project14",Keys.TAB,       //password
                                             Keys.ENTER);        //clicks on Register button
         ReusableMethods.waitForSecond(2);

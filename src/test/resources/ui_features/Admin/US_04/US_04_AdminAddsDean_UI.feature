@@ -33,7 +33,7 @@ Feature: US_04 Admin add Dean to the website
     And  dj Admin fills the name box
     And  dj Admin fills the surname box
     And  dj Admin fills the birthplace box
-    And  dj Admin clicks on the gender "FEMALE" button
+    And  dj User clicks on the gender "FEMALE" button
     And  dj Admin fills the date of birth box
     And  dj Admin fills the phone box
     And  dj Admin fills the invalids "<Ssn>" ssn box
@@ -55,7 +55,7 @@ Feature: US_04 Admin add Dean to the website
     And  dj Admin fills the empty "<name>" box
     And  dj Admin fills the surname box
     And  dj Admin fills the birthplace box
-    And  dj Admin clicks on the gender "FEMALE" button
+    And  dj User clicks on the gender "FEMALE" button
     And  dj Admin fills the date of birth box
     And  dj Admin fills the phone box
     And  dj Admin fills the ssn box
@@ -77,7 +77,7 @@ Feature: US_04 Admin add Dean to the website
     And  dj Admin fills the name box
     And  dj Admin fills the surname box
     And  dj Admin fills the birthplace box
-    And  dj Admin clicks on the gender "FEMALE" button
+    And  dj User clicks on the gender "FEMALE" button
     And  dj Admin fills the date of birth box
     And  dj Admin fills the phone box
     And  dj Admin fills the ssn box

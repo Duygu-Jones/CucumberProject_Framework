@@ -55,7 +55,7 @@ public class US_04_AdminDeanManagement_StepDef_API {
 
     @Then("dj Admin creates POST Request Body")
     public void djAdminCreatesPOSTRequestBody() {
-        payload = new DeanRequestPojo("1989-08-10",
+        payload = new DeanRequestPojo("1975-05-05",
                                     "Izmir",
                                     "FEMALE",
                                     "Duygu",
@@ -73,8 +73,6 @@ public class US_04_AdminDeanManagement_StepDef_API {
                 .post("{first}/{second}");
 
         response.prettyPrint();
-
-        actualData=response.as(DeanResponsePojo.class);
     }
 
     @And("dj Admin verifies Status-Code is {int}")
@@ -89,6 +87,8 @@ public class US_04_AdminDeanManagement_StepDef_API {
 
     @And("dj Admin verifies POST Response Body as expected")
     public void djAdminVerifiesPOSTResponseBodyAsExpected() {
+        actualData=response.as(DeanResponsePojo.class);
+
         assertEquals(payload.getBirthDay(), actualData.getObject().getBirthDay());
         assertEquals(payload.getBirthPlace(), actualData.getObject().getBirthPlace());
         assertEquals(payload.getGender(), actualData.getObject().getGender());
@@ -123,7 +123,7 @@ public class US_04_AdminDeanManagement_StepDef_API {
                                         "jnsduygu",
                                         "Duygu",
                                         "Jones",
-                                        "1989-08-10",
+                                        "1975-05-05",
                                         "568-72-9305",
                                         "Izmir",
                                         "555-275-8196",

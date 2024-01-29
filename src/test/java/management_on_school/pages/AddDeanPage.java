@@ -133,7 +133,7 @@ public class AddDeanPage {
     @FindBy(xpath="//div[@class='Toastify__toast-body']/div[.='Dean Saved']")  public WebElement deanSavedVerifyDj;
     @FindBy(xpath="(//div[@class='invalid-feedback'])[1]")  public WebElement nameRequiredVerifyDj;  //name required text locate
     @FindBy(xpath="//div[@class='Toastify__toast-body']/div[.='Please enter valid SSN number']")  public WebElement ssnRequiredVerifyDj;
-     @FindBy(xpath="(//div[@class='invalid-feedback'])[8]")  public WebElement unValidPasswordVrifyDj;
+     @FindBy(xpath="(//div[@class='invalid-feedback'])[8]")  public WebElement unValidPasswordVerifyDj;
 
 
 

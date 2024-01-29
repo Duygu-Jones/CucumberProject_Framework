@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class GuestContentBodyPojo implements Serializable {
+public class GuestGetAllContentListPojo implements Serializable {
 	private int userId;
 	private String username;
 	private String name;
@@ -16,10 +16,10 @@ public class GuestContentBodyPojo implements Serializable {
 	private String phoneNumber;
 	private String gender;
 
-	public GuestContentBodyPojo() {
+	public GuestGetAllContentListPojo() {
 	}
 
-	public GuestContentBodyPojo(int userId, String username, String name, String surname, String birthDay, String ssn, String birthPlace, String phoneNumber, String gender) {
+	public GuestGetAllContentListPojo(int userId, String username, String name, String surname, String birthDay, String ssn, String birthPlace, String phoneNumber, String gender) {
 		this.userId = userId;
 		this.username = username;
 		this.name = name;

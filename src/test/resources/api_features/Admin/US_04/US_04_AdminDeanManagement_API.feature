@@ -1,4 +1,4 @@
-@API_US04_05
+@API_US04
 
  Feature: US04 Dean Management by the Admin
 
@@ -44,7 +44,7 @@
         #     "birthPlace": "Izmir",
         #     "gender": "FEMALE",
         #     "name": "Duygu",
-        #     "password": "12345678Aa",
+        #     "password": "Project14",
         #     "phoneNumber": "555-275-8196",
         #     "ssn": "568-72-9305",
         #     "surname": "Jones",

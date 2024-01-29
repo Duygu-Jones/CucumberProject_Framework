@@ -118,8 +118,7 @@ public class US_05_AdminEditsDean_StepDef_UI {
     @And("dj admin clicks on the gender female button")
     public void djAdminClicksOnTheGenderFemaleButton() {
         ReusableMethods.waitForSecond(1);
-        //ReusableMethods.checkTheBox(deanPage.editDeanFemaleCheckBoxDj);
-        addDeanPage.deanFemaleCheckBoxDj.click();
+        ReusableMethods.jsClick(addDeanPage.deanFemaleCheckBoxDj);
     }
 
     @And("dj admin fills the password box")
