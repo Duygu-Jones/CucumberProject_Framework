@@ -24,5 +24,3 @@ Feature: US02 GuestUser List Management
     And  dj user clicks the delete
     And  dj close the browser
 
-
-     

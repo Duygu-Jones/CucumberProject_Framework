@@ -2,14 +2,12 @@
 
 Feature: US02 GuestUser Management
 
-  Scenario: US02_TC01 Register as a GuestUser on the website API
-    Given Login as "Admin"
-    Then dj create a POST Request with the URL and use guestUser-register path parameters for guestuser
-    Then dj create a POST Request Body for guestuser
-    And dj send a POST request and saves the response for guestuser
-    And dj verify Status-Code is 200 for guestuser
-    And dj verify Content-Type is "application/json" for guestuser
-    And dj verify POST Response Body as expected for guestuser
+  Scenario: US02_TC01 Register as a GuestUser on the website UI
+    Given dj user goes to the page Url
+    Then dj Clicks on the register button
+    And  dj User clicks on the gender "FEMALE" button
+    And  dj Fills the required information and clicks on Register
+    And dj close the browser
 
 
     Scenario: US02_TC02 Admin sends GET request to get GuestUser information from the website API

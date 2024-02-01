@@ -132,7 +132,7 @@ public class US_02_AdminGuestUserList_StepDef_UI {
                                                    Keys.TAB,    //Gender skipped
                                     "01011990",Keys.TAB,        //BirtDate
                                     "823-10-7392",Keys.TAB,     //SSN no
-                                    "00GuestDuyguJ",Keys.TAB,  //Username
+                                    "000GuestDuyguJ",Keys.TAB,  //Username
                                     "Project14",Keys.TAB,       //password
                                             Keys.ENTER);        //clicks on Register button
         ReusableMethods.waitForSecond(2);

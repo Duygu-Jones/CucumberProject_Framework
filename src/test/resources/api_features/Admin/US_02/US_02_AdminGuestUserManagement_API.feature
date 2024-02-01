@@ -2,15 +2,6 @@
 
 Feature: US02 GuestUser Management
 
-  #-----> Admin, sadece Get ve Delete GuestUser yapabilir; Guest Register UI ile yapildi -Api da Regsiter olmuyor
-#  @UI
-#  Scenario: US02_TC01 Register as a GuestUser on the website UI
-#    Given dj user goes to the page Url
-#    Then dj Clicks on the register button
-#    And  dj User clicks on the gender "FEMALE" button
-#    And  dj Fills the required information and clicks on Register
-#    And dj close the browser
-
   Scenario: US02_TC01 Register as a GuestUser on the website API
     Given Login as "Admin"
     Then dj create a POST Request with the URL and use guestUser-register path parameters for guestuser
